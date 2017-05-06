@@ -9,8 +9,8 @@ security:
       clientId: my-trusted-client
       clientSecret:
       scope: read,write,trust
-      accessTokenUri: http/v1/account-service/oauth/access_token
-      userAuthorizationUri: http/v1/account-service/login
+      accessTokenUri: http://localhost:5050/v1/account-service/oauth/access_token
+      userAuthorizationUri: http://localhost:5050/v1/account-service/login
       clientAuthenticationScheme: form
       auto-approve-scopes: read
       id: my-trusted-client
