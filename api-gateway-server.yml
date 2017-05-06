@@ -1,4 +1,5 @@
 zuul:
+  ignoredServices: '*'
   retryable: true
   routes:
     account-service: /v1/account-service/**
