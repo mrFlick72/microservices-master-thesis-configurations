@@ -2,6 +2,8 @@ server:
   use-forward-headers: true
 
 security:
+  basic:
+    enabled: false
   oauth2:
     client:
       clientId: my-trusted-client
