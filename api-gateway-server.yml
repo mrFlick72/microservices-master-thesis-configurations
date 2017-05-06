@@ -15,7 +15,7 @@ security:
       auto-approve-scopes: read
       id: my-trusted-client
     resource:
-      userInfoUri: http/account-service/account/userInfo
+      userInfoUri: http://localhost:5050/v1/account-service/account/userInfo
       preferTokenInfo: false
 
 zuul:
