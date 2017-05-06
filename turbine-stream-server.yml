@@ -1,6 +1,6 @@
 turbine:
+  appConfig: api-gateway-server,account-service
   clusterNameExpression: new String('default')
-  appConfig: account-service,api-gateway-server
   combineHostPort: true
   InstanceMonitor:
       eventStream:
