@@ -1,0 +1,4 @@
+turbine:
+  aggregator:
+    clusterConfig: default
+  appConfig: account-service,api-gateway-server
