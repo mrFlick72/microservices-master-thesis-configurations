@@ -11,4 +11,4 @@ zuul:
 proxy:
   auth:
     routes:
-      account-service: oauth2
+      account-service: passthru
