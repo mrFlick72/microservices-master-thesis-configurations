@@ -3,6 +3,7 @@ server:
 
 zuul:
   ignoredServices: '*'
+  ignoreSecurityHeaders: false
   retryable: true
   routes:
     account-service: /v1/account-service/**
