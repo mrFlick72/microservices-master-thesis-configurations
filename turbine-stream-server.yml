@@ -2,3 +2,7 @@ turbine:
   clusterNameExpression: new String('default')
   appConfig: account-service,api-gateway-server
   combineHostPort: true
+  InstanceMonitor:
+      eventStream:
+        skipLineLogic:
+          enabled: false
