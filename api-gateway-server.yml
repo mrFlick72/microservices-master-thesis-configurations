@@ -1,0 +1,4 @@
+zuul:
+  retryable: true
+  routes:
+    acount-service: /v1/acount-service/**
