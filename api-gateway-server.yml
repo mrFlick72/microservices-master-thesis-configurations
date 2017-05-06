@@ -1,3 +1,21 @@
+server:
+  use-forward-headers: true
+
+security:
+  oauth2:
+    client:
+      clientId: my-trusted-client
+      clientSecret:
+      scope: read,write,trust
+      accessTokenUri: /v1/account-service/oauth/access_token
+      userAuthorizationUri: /v1/account-service/login
+      clientAuthenticationScheme: form
+      auto-approve-scopes: read
+      id: my-trusted-client
+    resource:
+      userInfoUri: /v1/account-service/account/userInfo
+      preferTokenInfo: false
+
 zuul:
   ignoredServices: '*'
   retryable: true
