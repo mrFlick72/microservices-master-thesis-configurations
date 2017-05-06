@@ -14,3 +14,15 @@ spring:
     cassandra:
       schema-action: CREATE_IF_NOT_EXISTS
       keyspace-name: accountEventKeyspace
+
+
+security:
+  oauth2:
+    client:
+      clientId: my-trusted-client
+      clientSecret:
+      accessTokenUri: /oauth/access_token
+      userAuthorizationUri: /oauth/authorize
+      clientAuthenticationScheme: form
+    resource:
+      filter-order: 3
