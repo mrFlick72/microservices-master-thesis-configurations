@@ -1,23 +1,6 @@
 server:
   use-forward-headers: true
 
-security:
-  basic:
-    enabled: false
-  oauth2:
-    client:
-      clientId: my-trusted-client
-      clientSecret:
-      scope: read,write,trust
-      accessTokenUri: http://localhost:5050/v1/account-service/oauth/access_token
-      userAuthorizationUri: http://localhost:5050/v1/account-service/login
-      clientAuthenticationScheme: form
-      auto-approve-scopes: read
-      id: my-trusted-client
-    resource:
-      userInfoUri: http://localhost:5050/v1/account-service/account/userInfo
-      preferTokenInfo: false
-
 zuul:
   ignoredServices: '*'
   retryable: true
