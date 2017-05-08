@@ -1,6 +1,10 @@
 server:
   use-forward-headers: true
 
+security:
+  basic:
+    enabled: false
+
 zuul:
   ignoredServices: '*'
   ignoreSecurityHeaders: false
