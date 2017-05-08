@@ -4,6 +4,12 @@ server:
 security:
   basic:
     enabled: false
+  oauth2:
+    client:
+      accessTokenUri: /v1/account-service/oauth/token
+      userAuthorizationUri: /v1/account-service/oauth/authorize
+      clientId: my-trusted-client
+      clientSecret:
 
 zuul:
   ignoredServices: '*'
