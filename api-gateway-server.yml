@@ -1,13 +1,11 @@
 server:
   use-forward-headers: true
 
-security:
-  basic:
-    enabled: false
-
 zuul:
+  sensitiveHeaders:
   ignoredServices: '*'
   ignoreSecurityHeaders: false
+  addHostHeader: true
   retryable: true
   routes:
     account-service: /v1/account-service/**
