@@ -7,8 +7,3 @@ zuul:
   retryable: true
   routes:
     account-service: /v1/account-service/**
-
-proxy:
-  auth:
-    routes:
-      account-service: passthru
