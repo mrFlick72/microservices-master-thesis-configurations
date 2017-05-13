@@ -1,6 +1,8 @@
 spring:
   rabbitmq:
     host: rabbitmq
+  redis:
+    host: redis
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://database:3306/account_service
@@ -13,8 +15,6 @@ spring:
     hibernate:
       ddl-auto: update
   data:
-    redis:
-      host: redis
     cassandra:
       contact-points: cassandra
       schema-action: CREATE_IF_NOT_EXISTS
