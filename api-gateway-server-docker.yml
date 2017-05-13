@@ -4,6 +4,9 @@ server:
 spring:
   rabbitmq:
     host: rabbitmq
+  data:
+    redis:
+      host: redis
 
 eureka:
   client:
