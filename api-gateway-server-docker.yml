@@ -1,0 +1,16 @@
+server:
+  use-forward-headers: true
+
+spring:
+  rabbitmq:
+    host: rabbitmq
+
+zuul:
+  sensitiveHeaders:
+  ignoredServices: '*'
+  ignoreSecurityHeaders: false
+  addHostHeader: true
+  retryable: true
+  routes:
+    account-service: /v1/account-service/**
+    product-catalog-service: /v1/product-catalog-service/**
