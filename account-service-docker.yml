@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://mysql:3306/account_service
+    url: jdbc:mysql://database:3306/account_service
     username: root
     password: root
     maximum-pool-size: 20
