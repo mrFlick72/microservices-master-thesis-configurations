@@ -1,4 +1,8 @@
 security:
+  rabbitmq:
+    host: rabbitmq
+  redis:
+    host: redis
    oauth2:
      client:
        clientId: my-trusted-client
@@ -13,6 +17,7 @@ security:
 spring:
   data:
     cassandra:
+      contact-points: cassandra
       keyspace-name: productCatalogEventKeyspace
       schema-action: create_if_not_exists
     mongodb:
