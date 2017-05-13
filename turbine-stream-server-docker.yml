@@ -1,3 +1,8 @@
 turbine:
   appConfig: api-gateway-server,account-service
   clusterNameExpression: new String('default')
+
+
+eureka:
+  instance:
+    preferIpAddress: true

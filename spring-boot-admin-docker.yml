@@ -3,3 +3,8 @@ spring:
     admin:
       turbine:
         url: http://turbine:7070/turbine.stream
+
+
+eureka:
+  instance:
+    preferIpAddress: true

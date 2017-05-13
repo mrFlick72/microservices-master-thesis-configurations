@@ -20,5 +20,10 @@ spring:
       schema-action: CREATE_IF_NOT_EXISTS
       keyspace-name: accountEventKeyspace
 
+
+eureka:
+  instance:
+    preferIpAddress: true
+
 server:
   use-forward-headers: true

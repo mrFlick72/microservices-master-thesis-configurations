@@ -1,3 +1,7 @@
 spring:
   rabbitmq:
     host: rabbitmq
+
+eureka:
+  instance:
+    preferIpAddress: true
