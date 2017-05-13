@@ -22,6 +22,9 @@ spring:
 
 
 eureka:
+  client:
+    healthcheck:
+      enabled: true
   instance:
     preferIpAddress: true
 

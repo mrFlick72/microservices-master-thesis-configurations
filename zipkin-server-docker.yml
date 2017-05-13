@@ -3,5 +3,8 @@ spring:
     host: rabbitmq
 
 eureka:
+  client:
+    healthcheck:
+      enabled: true
   instance:
     preferIpAddress: true
