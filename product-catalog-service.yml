@@ -15,7 +15,7 @@ security:
 spring:
   data:
     cassandra:
-      keyspace-name: productCatalogEventKeyspace
+      keyspace-name: productCatalogEventKeyspaceaaa
       schema-action: recreate
     mongodb:
       database: product_catalog
