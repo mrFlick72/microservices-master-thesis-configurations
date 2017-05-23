@@ -15,7 +15,6 @@ security:
 spring:
   data:
     cassandra:
-      port: 8888
       keyspace-name: productCatalogEventKeyspace
       schema-action: recreate_drop_unused
     mongodb:
