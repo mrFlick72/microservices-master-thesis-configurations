@@ -16,7 +16,7 @@ spring:
   data:
     cassandra:
       keyspace-name: productCatalogEventKeyspace
-      schema-action: recreate
+      schema-action: recreate_drop_unused
     mongodb:
       database: product_catalog
 
