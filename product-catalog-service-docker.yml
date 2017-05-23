@@ -6,7 +6,7 @@ security:
   security:
     basic:
       enabled: false
-   oauth2:
+    oauth2:
      client:
        clientId: my-trusted-client
        clientSecret:
