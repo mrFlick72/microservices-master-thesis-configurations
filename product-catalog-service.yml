@@ -16,7 +16,7 @@ spring:
   data:
     cassandra:
       keyspace-name: productCatalogEventKeyspace
-      schema-action: create_if_not_exists
+      schema-action: recreate
     mongodb:
       database: product_catalog
 
