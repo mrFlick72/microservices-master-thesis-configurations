@@ -3,6 +3,9 @@ security:
     host: rabbitmq
   redis:
     host: redis
+  security:
+    basic:
+      enabled: false
    oauth2:
      client:
        clientId: my-trusted-client
