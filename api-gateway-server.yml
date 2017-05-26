@@ -1,5 +1,4 @@
 server:
-  context-path: /api
   use-forward-headers: true
 
 zuul:
