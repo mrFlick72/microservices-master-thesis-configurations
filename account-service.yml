@@ -16,5 +16,4 @@ spring:
       keyspace-name: accountEventKeyspace
 
 server:
-  context-path: /user
   use-forward-headers: true
