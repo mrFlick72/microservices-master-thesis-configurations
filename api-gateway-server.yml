@@ -1,6 +1,11 @@
 server:
   use-forward-headers: true
 
+proxy:
+  auth:
+    routes:
+      account-service: oauth2
+
 zuul:
   sensitiveHeaders:
   ignoredServices: '*'
