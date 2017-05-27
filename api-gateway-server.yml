@@ -5,7 +5,6 @@ zuul:
   retryable: true
   ignoredServices: '*'
   sensitiveHeaders:
-  strip-prefix: false
   add-host-header: true
   add-proxy-headers: true
   ignore-security-headers: false
