@@ -7,6 +7,7 @@ proxy:
       account-service: oauth2
 
 zuul:
+  prefix: /api
   sensitiveHeaders:
   ignoredServices: '*'
   ignoreSecurityHeaders: false

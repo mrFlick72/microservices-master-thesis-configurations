@@ -13,6 +13,7 @@ eureka:
       enabled: true
 
 zuul:
+  prefix: /api
   sensitiveHeaders:
   ignoredServices: '*'
   ignoreSecurityHeaders: false
