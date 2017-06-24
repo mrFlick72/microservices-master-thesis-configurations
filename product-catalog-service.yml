@@ -2,8 +2,15 @@ security:
   basic:
     enabled: false
   oauth2:
+    client:
+     clientId: my-trusted-client
+     clientSecret:
+     accessTokenUri: http://localhost:9090/oauth/access_token
+     userAuthorizationUri: http://localhost:9090/oauth/authorize
+     clientAuthenticationScheme: form
     resource:
-     userInfoUri: http://localhost:5050/api/v1/account-service/account/userInfo
+     userInfoUri: http://localhost:9090/account/userInfo
+     preferTokenInfo: false
 
 spring:
   data:
