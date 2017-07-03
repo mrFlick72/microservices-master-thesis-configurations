@@ -1,5 +1,5 @@
 turbine:
-  appConfig: api-gateway-server,account-service
+  appConfig: api-gateway-server,account-serviceproduct-catalog-service,purchase-order-service
   clusterNameExpression: new String('default')
 
 
