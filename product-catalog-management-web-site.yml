@@ -7,6 +7,9 @@ server:
   context-path: /site
 
 eureka:
+  client:
+    healthcheck:
+      enabled: true
   instance:
     statusPageUrlPath: ${server.context-path}/info
     healthCheckUrlPath: ${server.context-path}/health
@@ -38,8 +41,3 @@ zuul:
   addHostHeader: true
   routes:
     product-catalog-service: /v1/product-catalog-service/**
-
-eureka:
-  client:
-    healthcheck:
-      enabled: true
