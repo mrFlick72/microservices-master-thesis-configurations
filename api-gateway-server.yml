@@ -15,3 +15,8 @@ zuul:
   routes:
     account-service: /v1/account-service/**
     product-catalog-service: /v1/product-catalog-service/**
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true

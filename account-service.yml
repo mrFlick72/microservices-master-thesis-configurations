@@ -35,3 +35,8 @@ security:
 
 server:
   use-forward-headers: true
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true

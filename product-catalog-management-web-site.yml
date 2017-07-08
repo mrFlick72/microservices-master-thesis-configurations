@@ -38,3 +38,8 @@ zuul:
   addHostHeader: true
   routes:
     product-catalog-service: /v1/product-catalog-service/**
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true

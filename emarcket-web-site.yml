@@ -42,3 +42,8 @@ zuul:
     product-catalog-service: /v1/product-catalog-service/**
     account-service: /v1/account-service/**
     purchase-order-service: /v1/purchase-order-service/**
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true

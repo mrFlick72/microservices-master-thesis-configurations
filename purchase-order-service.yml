@@ -24,3 +24,8 @@ security:
     resource:
      id: oauth2-resource
      user-info-uri: http://localhost:9090/account/userInfo.json
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
