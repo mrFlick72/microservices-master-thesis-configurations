@@ -1,6 +1,10 @@
 server:
   use-forward-headers: true
 
+management:
+  security:
+    enabled: false
+
 zuul:
   prefix: /api
   sensitiveHeaders:

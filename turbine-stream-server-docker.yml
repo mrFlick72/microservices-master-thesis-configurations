@@ -1,9 +1,0 @@
-turbine:
-  appConfig: api-gateway-server,account-serviceproduct-catalog-service,purchase-order-service
-  clusterNameExpression: new String('default')
-
-
-eureka:
-  client:
-    healthcheck:
-      enabled: true

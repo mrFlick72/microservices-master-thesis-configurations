@@ -1,3 +1,16 @@
+spring:
+  messages:
+    basename: messages/messages
+
+server:
+  use-forward-headers: true
+  context-path: /site
+
+eureka:
+  instance:
+    statusPageUrlPath: ${server.context-path}/info
+    healthCheckUrlPath: ${server.context-path}/health
+
 security:
   oauth2:
     client:
@@ -11,21 +24,17 @@ security:
     resource:
      id: oauth2-resource
      user-info-uri: http://localhost:9090/account/userInfo.json
-
-
+     preferTokenInfo: false
 
 management:
   security:
     enabled: false
 
-
-spring:
-  data:
-    cassandra:
-      keyspace-name: productCatalogEventKeyspace
-      schema-action: CREATE_IF_NOT_EXISTS
-    mongodb:
-      database: product_catalog
-
-server:
-  use-forward-headers: true
+zuul:
+  prefix: /api
+  sensitiveHeaders:
+  ignoredServices: '*'
+  ignoreSecurityHeaders: false
+  addHostHeader: true
+  routes:
+    product-catalog-service: /v1/product-catalog-service/**

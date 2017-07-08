@@ -15,6 +15,9 @@ spring:
       schema-action: CREATE_IF_NOT_EXISTS
       keyspace-name: accountEventKeyspace
 
+management:
+  security:
+    enabled: false
 
 security:
   oauth2:
