@@ -26,6 +26,13 @@ spring:
       schema-action: CREATE_IF_NOT_EXISTS
     mongodb:
       database: product_catalog
+  cloud:
+    stream:
+      bindings:
+        goodsEventOutboundChannel:
+          content-type: application/json
+        priceListEventOutboundChannel:
+          content-type: application/json
 
 server:
   use-forward-headers: true

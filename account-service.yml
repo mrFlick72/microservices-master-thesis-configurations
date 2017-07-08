@@ -14,6 +14,11 @@ spring:
     cassandra:
       schema-action: CREATE_IF_NOT_EXISTS
       keyspace-name: accountEventKeyspace
+  cloud:
+    stream:
+      bindings:
+        accountEventOutboundChannel:
+          content-type: application/json
 
 management:
   security:
