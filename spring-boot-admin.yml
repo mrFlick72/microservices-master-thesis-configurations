@@ -2,3 +2,10 @@ eureka:
   client:
     healthcheck:
       enabled: true
+
+boot:
+ admin:
+   turbine:
+     clusters: default
+   routes:
+     endpoints: env,metrics,trace,dump,jolokia,info,configprops,trace,logfile,activiti,refresh,flyway,liquibase,heapdump,hystrix.stream
