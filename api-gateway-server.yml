@@ -20,4 +20,3 @@ eureka:
   client:
     healthcheck:
       enabled: true
-      enabled: true
