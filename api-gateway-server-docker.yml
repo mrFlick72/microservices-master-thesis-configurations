@@ -1,5 +1,6 @@
 server:
   use-forward-headers: true
+  port: 5050
 
 management:
   security:

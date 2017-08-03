@@ -5,6 +5,7 @@ spring:
 server:
   use-forward-headers: true
   context-path: /site
+  port: 2000
 
 eureka:
   client:
@@ -14,19 +15,20 @@ eureka:
     statusPageUrlPath: ${server.context-path}/info
     healthCheckUrlPath: ${server.context-path}/health
 
+
 security:
   oauth2:
     client:
      clientId: my-trusted-client
      clientSecret:
-     accessTokenUri: http://localhost:9090/oauth/token
+     accessTokenUri: http://authentication-server:9090/oauth/token
      userAuthorizationUri: http://localhost:9090/oauth/authorize
      auto-approve-scopes: '.*'
      registered-redirect-uri: http://localhost:9090/login
      clientAuthenticationScheme: form
     resource:
      id: oauth2-resource
-     user-info-uri: http://localhost:9090/account/userInfo.json
+     user-info-uri: http://authentication-server:9090/account/userInfo.json
      preferTokenInfo: false
 
 management:
@@ -41,3 +43,5 @@ zuul:
   addHostHeader: true
   routes:
     product-catalog-service: /v1/product-catalog-service/**
+    account-service: /v1/account-service/**
+    purchase-order-service: /v1/purchase-order-service/**

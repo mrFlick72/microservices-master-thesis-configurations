@@ -36,6 +36,7 @@ spring:
 
 server:
   use-forward-headers: true
+  port: 4040
 
 eureka:
   client:
